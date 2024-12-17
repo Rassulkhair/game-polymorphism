@@ -16,6 +16,13 @@ public class Main {
         // запрашивать номер с клавиатуры
         // с помощью scanner.nextInt(),
         // пока не будет введено -1
+        while (true) {
+            slot = scanner.nextInt();
+            if (slot == -1) {
+                break;
+            }
+            player.shotWithWeapon(slot - 1);
+        }
 
         System.out.println("Game over!");    }
 }
