@@ -1,4 +1,8 @@
 package Arsenal;
 
-public class RPG {
+public class RPG implements Weapon{
+    @Override
+    public void shot() {
+        System.out.println("RPG shot");
+    }
 }
